@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* hides lesson content */
+
+#lectureContent {
+	display:none; 
+	}	
+#studioContent {
+	display:none; 
+	}	
+#critiqueContent {
+	display:none; 
+	}	
+
+/* site header */
+
+#stLIg {
+	margin-top:25px;
+	margin-bottom:25px;
+	}
+#logInGuide{
+	margin-top:5px;
+	text-align: right;
+	color:#999;
+	letter-spacing:1px;
+	}
+.light {
+	color:#999;
+	}
+.siteTitle {
+	color: #337AB7;
+	font-size:35px;
+	line-height:normal;
+	text-transform:uppercase;
+	}
+#siteTitle a:hover {
+	text-decoration:none !important;
+	}				
+#nav {
+	margin-bottom:50px;
+	border-bottom:solid 2px #EEE;
+	padding-bottom: 10px; 
+	}	
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background-color:#ED6237;
+	}
+	
+/* content - main pages*/
+
+#content {
+	padding-bottom:50px;
+	}
+h1.h1jumbotron {
+	color:#ED6237;
+	}
+#lessonNav {
+	margin-bottom:10px;
+	border-bottom:2px solid #EEE;
+	}
+#introButton, #lectureButton, #studioButton, #critiqueButton {
+	text-transform:uppercase;
+	font-weight:bolder;
+	}	
+h1 {
+	margin-bottom:35px;
+	}	
+#directions li {
+	padding-bottom:10px;
+	}	
+#notebook textarea, #reflectionArea, #critiqueArea {
+	margin-bottom:15px;
+	}	
+#inputFile {
+	margin-bottom:10px;
+	}	
+#uploadSketch, #rating {
+	margin-bottom:25px;
+	}
+#rating label {
+	padding-right:15px;
+	}		
+#critiqueAssignment button.btn.btn-btn-default, #critiqueAssignment .checkbox	{
+	margin-bottom:20px;
+	}
+#selections img.img-responsive {
+	margin-bottom:35px;
+	}		
+	
+/* content - teacher page */
+
+#courseDescription li {
+	padding-bottom:15px;
+	}
+#courseDescription li.last {
+	padding-bottom:0px;
+	}
+#sidebar {
+	padding-top:25px;
+	}	
+#sidebar li {
+	padding-bottom:10px;
+	}
+		
