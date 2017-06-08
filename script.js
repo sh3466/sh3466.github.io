@@ -1,19 +1,18 @@
 
-
-
-// save - WRITE alert, store inputs (text, radio, checkboxes) ONCLICK, update completion info ONCLICK, change state when nothing new vs new ONCHANGE
-
+// ! WRITE alert
+// ! store inputs (text, radio, checkboxes) ONCLICK === don't refresh
+// update completion info ONCLICK
+// change state when nothing new vs new ONCHANGE
 function save(event) {
-	alert("Saved!");	
+	alert("Saved!");
 }
 
-// reset - WRITE alert, reset page elements ONCLICK, reset completion info ONCLICK, change state when nothing new vs new ONCHANGE
-
+// ! clear page elements ONCLICK but don't refresh
+// reset completion info ONCLICK
+// change state when nothing new vs new ONCHANGE
 function clear(event) {
-	document.querySelector('#notes') = "reset";
+	document.querySelector("#notesClear").innerText = "";
 }
-
-
 
 // linkImage - show image from address
 // onclick
@@ -21,5 +20,3 @@ function clear(event) {
 
 // uploadImage - show image from upload
 // on
-
-
