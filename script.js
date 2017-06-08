@@ -1,6 +1,6 @@
 // save - WRITE alert, store inputs (text, radio, checkboxes) ONCLICK, update completion info ONCLICK, change state when nothing new vs new ONCHANGE
 
-function save() {
+function save(event) {
 	alert("Saved!");
 	event.preventDefault()
 }
