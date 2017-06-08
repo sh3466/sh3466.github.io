@@ -62,7 +62,7 @@ h1.h1jumbotron {
 	text-transform:uppercase;
 	font-weight:bolder;
 	}
-#introButton.btn.btn-default.highlight {
+#introButton.btn.btn-default.highlight:active {
 	background: blue;
 	}
 h1 {
