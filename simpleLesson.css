@@ -63,7 +63,7 @@ h1.h1jumbotron {
 	font-weight:bolder;
 	}
 button.btn.btn-btn-default-highlight:active {
-	background: #ED6237;
+	background: blue;
 	}
 h1 {
 	margin-bottom:35px;
