@@ -1,12 +1,13 @@
 // save - WRITE alert, store inputs (text, radio, checkboxes) ONCLICK, update completion info ONCLICK, change state when nothing new vs new ONCHANGE
-<script>
-
-function save(event) {
+function save() {
 	alert("Saved!");
-	event.preventDefault();
 }
 
 // reset - WRITE alert, reset page elements ONCLICK, reset completion info ONCLICK, change state when nothing new vs new ONCHANGE
+function reset() {
+	var noteField = document.querySelector("notes");
+	noteField = "";
+}
 
 
 // linkImage - show image from address
@@ -15,5 +16,3 @@ function save(event) {
 
 // uploadImage - show image from upload
 // on
-
-</script>
