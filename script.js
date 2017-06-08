@@ -1,5 +1,5 @@
 function active(event) {
-	document.querySelector('#introContent').show;
+	document.querySelector('#introContent').hide;
 }
 
 
