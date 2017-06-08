@@ -25,10 +25,8 @@
 	color:#999;
 	letter-spacing:1px;
 	}
-@media (max-width:767px){
-   #logInGuide{
-       text-align:left;
-   }
+@media (max-width: 767px) {
+    logInGuide { text-align:left }
 }
 .light {
 	color:#999;
