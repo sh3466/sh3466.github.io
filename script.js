@@ -1,3 +1,10 @@
+// html = onEvent="someFunc(event)" pattern
+// variables to remember and recall states
+// small functions into larger functions
+// listen for events - click, change, blur ...
+// write content to the page based on user action
+// manipulate html/css elements
+
 
 // ! WRITE alert
 // ! store inputs (text, radio, checkboxes) ONCLICK === don't refresh
@@ -11,7 +18,8 @@ function save(event) {
 // reset completion info ONCLICK
 // change state when nothing new vs new ONCHANGE
 function clear(event) {
-	document.querySelector("#notesClear").innerText = "";
+	var text = document.querySelector('#notesClear').placeholder;
+	text = "hello";
 }
 
 // linkImage - show image from address

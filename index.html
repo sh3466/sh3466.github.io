@@ -193,18 +193,13 @@
 							<h1>
 				   			Notebook
 							</h1>
-							<!---<form>
-								<div class="form-group">--->
-									<textarea id="notesClear" rows="10" class="form-control" placeholder="Your notes here."></textarea>
-									<button class="btn btn-success" onclick="save()">
-                  	Save
-            			</button>
-									<button class="btn btn-warning" onclick="clear()">
-								    Clear
-									</button>
-								</div>
-								<!--- end .form-group --->
-							<!---</form>--->
+							<textarea id="notesClear" rows="10" class="form-control" placeholder="Your notes here."></textarea>
+							<button class="btn btn-success" onclick="save()">
+              	Save
+            	</button>
+							<button class="btn btn-warning" onclick="clear()">
+							   Clear
+							</button>
 						</div>
 						<!--- end #notebook --->
 					</div>
@@ -257,55 +252,50 @@
 							<h1>
 								Assignment
 							</h1>
-							<form>
-								<div id="uploadSketch" class="form-group">
-									<label for="inputFile">
-										1. Upload your sketch here.
-									</label>
-									<input type="file" id="inputFile" />
-									<img src="http://placehold.it/500x500" class="img-responsive" />
-								</div>
-								<!--- end #uploadSketch --->
-								<p>
-									<strong>2. How successful is your sketch in relation to chiaroscuro?</strong>
-								</p>
-								<div id="rating" class="radio">
-									<label>
-										<input type="radio" name="optionsRadios" id="1" value="option1" />
-											Extremely successful
-									</label>
-									<label>
-										<input type="radio" name="optionsRadios" id="2" value="option2" />
-											Very successful
-									</label>
-									<label>
-										<input type="radio" name="optionsRadios" id="3" value="option3" />
-											Moderately successful
-									</label>
-									<label>
-										<input type="radio" name="optionsRadios" id="4" value="option4" />
-											Slightly successful
-									</label>
-									<label>
-										<input type="radio" name="optionsRadios" id="5" value="option5" />
-											Not at all successful
-									</label>
-								</div>
-								<!--- end #rating --->
-								<p>
-									<strong>3. Write a reflection on your experience with applying chiaroscuro and your sketch's successfulness in relation to chiaroscuro.</strong>
-								</p>
-								<div id="reflection" class="form-group">
-									<textarea id="reflectionArea" rows="10" class="form-control" placeholder="Your reflection."></textarea>
-									<button class="btn btn-success" onclick="save()">
-                  	Save
-            			</button>
-									<button class="btn btn-warning" onclick="clear()">
-								    Clear
-									</button>
-								</div>
-								<!--- end #reflection --->
-							</form>
+							<div id="uploadSketch" class="form-group">
+								<label for="inputFile">
+									1. Upload your sketch here.
+								</label>
+								<input type="file" id="inputFile" />
+								<img src="http://placehold.it/500x500" class="img-responsive" />
+							</div>
+							<!--- end #uploadSketch --->
+							<p>
+								<strong>2. How successful is your sketch in relation to chiaroscuro?</strong>
+							</p>
+							<div id="rating" class="radio">
+								<label>
+									<input type="radio" name="optionsRadios" id="1" value="option1" />
+										Extremely successful
+								</label>
+								<label>
+									<input type="radio" name="optionsRadios" id="2" value="option2" />
+										Very successful
+								</label>
+								<label>
+									<input type="radio" name="optionsRadios" id="3" value="option3" />
+										Moderately successful
+								</label>
+								<label>
+									<input type="radio" name="optionsRadios" id="4" value="option4" />
+										Slightly successful
+								</label>
+								<label>
+									<input type="radio" name="optionsRadios" id="5" value="option5" />
+										Not at all successful
+								</label>
+							</div>
+							<!--- end #rating --->
+							<p>
+								<strong>3. Write a reflection on your experience with applying chiaroscuro and your sketch's successfulness in relation to chiaroscuro.</strong>
+							</p>
+							<textarea id="reflectionArea" rows="10" class="form-control" placeholder="Your reflection."></textarea>
+							<button class="btn btn-success" onclick="save()">
+              	Save
+        			</button>
+							<button class="btn btn-warning" onclick="clear()">
+						    Clear
+							</button>
 						</div>
 						<!--- end #studioAssignment --->
 					</div>
@@ -360,43 +350,39 @@
 							</p>
 							<div class="row">
 								<div id="selections" class="col-md-6">
-									<form>
-										<div class="form-group">
-											<label for="selection1">
-												Enter your first selection here.
-											</label>
-											<input type="url" class="form-control" id="selection1" placeholder="enter a URL" />
-										</div>
-										<div class="checkbox">
-											<label>
-												<input type="checkbox" />This piece is public domain or under a creative commons license.
-											</label>
-										</div>
-										<button type="submit" class="btn btn-btn-default">
-											submit
-										</button>
-										<img src="http://placehold.it/500x500" class="img-responsive" />
-									</form>
+									<div class="form-group">
+										<label for="selection1">
+											Enter your first selection here.
+										</label>
+										<input type="url" class="form-control" id="selection1" placeholder="enter a URL" />
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" />This piece is public domain or under a creative commons license.
+										</label>
+									</div>
+									<button type="submit" class="btn btn-btn-default">
+										submit
+									</button>
+									<img src="http://placehold.it/500x500" class="img-responsive" />
 								</div>
 								<!--- end .col --->
 								<div id="selections" class="col-md-6">
-									<form>
-										<div class="form-group">
-											<label for="selection2">
-												Enter your second selection here.
-											</label>
-											<input type="url" class="form-control" id="selection1" placeholder="enter a URL" />
-										</div>
-										<div class="checkbox">
-											<label>
-												<input type="checkbox" />This piece is public domain or under a creative commons license.
-											</label>
-										</div>
-										<button type="submit" class="btn btn-btn-default">
-											submit
-										</button>
-										<img src="http://placehold.it/500x500" class="img-responsive" />
-									</form>
+									<div class="form-group">
+										<label for="selection2">
+											Enter your second selection here.
+										</label>
+										<input type="url" class="form-control" id="selection1" placeholder="enter a URL" />
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" />This piece is public domain or under a creative commons license.
+										</label>
+									</div>
+									<button type="submit" class="btn btn-btn-default">
+										submit
+									</button>
+									<img src="http://placehold.it/500x500" class="img-responsive" />
 								</div>
 								<!--- end .col --->
 							</div>
@@ -408,18 +394,16 @@
 								For each selection, describe the piece in terms of artist, medium, title, date, location and subject matter. Then analyze each piece in terms of how the work is constructed with regards to chiaroscuro, including points of emphasis. Finally, describe how
 								each piece makes you think or feel. Be sure to compare and contrast your selections.
 							</p>
-							<form>
-								<div id="critique" class="form-group">
-									<textarea id="critiqueArea" rows="10" class="form-control" placeholder="Write a critique on the two pieces you have selected."></textarea>
-									<button class="btn btn-success" onclick="save()">
-                  	Save
-            			</button>
-									<button class="btn btn-warning" onclick="clear()">
-								    Clear
-									</button>
-								</div>
-								<!--- end #critique --->
-							</form>
+							<div id="critique" class="form-group">
+								<textarea id="critiqueArea" rows="10" class="form-control" placeholder="Write a critique on the two pieces you have selected."></textarea>
+								<button class="btn btn-success" onclick="save()">
+                	Save
+          			</button>
+								<button class="btn btn-warning" onclick="clear()">
+							    Clear
+								</button>
+							</div>
+							<!--- end #critique --->
 						</div>
 						<!--- end #critiqueAssignment --->
 					</div>
