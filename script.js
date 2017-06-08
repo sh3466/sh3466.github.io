@@ -2,12 +2,14 @@
 
 function save() {
 	alert("Saved!");
+	event.preventDefault()
 }
 
 // reset - WRITE alert, reset page elements ONCLICK, reset completion info ONCLICK, change state when nothing new vs new ONCHANGE
 
 function clear() {
 	document.querySelector('#notes') = "reset";
+	event.preventDefault()
 }
 
 
