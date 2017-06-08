@@ -1,6 +1,4 @@
-function active(event) {
-	document.querySelector('#introContent').style.display = "none";
-}
+
 
 
 // save - WRITE alert, store inputs (text, radio, checkboxes) ONCLICK, update completion info ONCLICK, change state when nothing new vs new ONCHANGE
