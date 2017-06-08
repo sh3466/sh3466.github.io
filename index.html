@@ -109,16 +109,16 @@
 		<!--- lesson navigation --->
         	<div id="lessonNav">
 			<div id="lessonNavButtons" class="btn-group" role="group">
-				<button id="introButton" type="button" class="btn btn-default">
+				<button id="introButton" type="button" class="btn btn-default" onclick="active()">
 					1. Introduction
 				</button>
-				<button id="lectureButton" type="button" class="btn btn-default">
+				<button id="lectureButton" type="button" class="btn btn-default" onclick="active()">
 				    	2. Lecture
 				</button>
-				<button id="studioButton" type="button" class="btn btn-default">
+				<button id="studioButton" type="button" class="btn btn-default" onclick="active()">
 				    	3. Studio
 				</button>
-				<button id="critiqueButton" type="button" class="btn btn-default">
+				<button id="critiqueButton" type="button" class="btn btn-default" onclick="active()">
 				    	4. Critique
 				</button>
 		    	</div> <!--- end #lessonNavButtons --->
@@ -176,8 +176,8 @@
 						<h1>
 				   			Notebook
 						</h1>
-						<div class="panel panel-default">
-							<div class="panel-body">
+						<form>
+							<div id="notes" class="form-group">
 								<textarea  rows="10" class="form-control" placeholder="Your notes here."></textarea>
                               	<button class="btn btn-success" onclick="save()">
                               		Save
@@ -185,8 +185,8 @@
 								<button class="btn btn-warning" onclick="clear()">
 								    Reset
 								</button>
-						    	</div> <!--- panel-body --->
-						</div>
+						    	</div> <!--- end .form-group --->
+						</form>
 			    		</div> <!--- end #notebook --->
 				</div> <!--- end .col --->                     	
 			</div><!--- end .row --->
@@ -384,7 +384,7 @@
     
 </div> <!--- end #container --->
 </body>
-
+<!---
 <script>
 $(document).ready(function(){
  $("#introButton").click(function() {
@@ -419,5 +419,5 @@ $(document).ready(function(){
  });
 });
 </script>
-
+--->
 </html>
