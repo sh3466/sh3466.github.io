@@ -61,7 +61,10 @@ h1.h1jumbotron {
 #introButton, #lectureButton, #studioButton, #critiqueButton {
 	text-transform:uppercase;
 	font-weight:bolder;
-	}	
+	}
+#introButton:active, #lectureButton:active, #studioButton:active, #critiqueButton:active {
+	background: #ED6237;
+	}
 h1 {
 	margin-bottom:35px;
 	}	
