@@ -6,7 +6,7 @@ function save() {
 // reset - WRITE alert, reset page elements ONCLICK, reset completion info ONCLICK, change state when nothing new vs new ONCHANGE
 function reset() {
 	var noteField = document.querySelector("notes");
-	noteField = "";
+	noteField.innerHTML = "";
 }
 
 
