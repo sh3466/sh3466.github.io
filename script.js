@@ -2,7 +2,7 @@
 
 function save(event) {
 	alert("Saved!");
-	event.stopPropagation();
+	
 }
 
 // reset - WRITE alert, reset page elements ONCLICK, reset completion info ONCLICK, change state when nothing new vs new ONCHANGE
