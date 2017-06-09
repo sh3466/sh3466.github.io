@@ -14,7 +14,7 @@ function save(event) {
 }
 
 function linkInfo(event) {
-	alert("Be sure to use the image's URL, not the webpage's URL. You can find the image URL by right-clicking on the image.");
+	alert("Be sure to use the image's URL, not the webpage's URL. You can find the image URL by right-clicking on the image. Then choose \"copy image address\".");
 }
 
 // RESET elements ONCLICK
