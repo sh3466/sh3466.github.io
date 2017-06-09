@@ -2,12 +2,12 @@
 // listen for events - click, change, blur ...
 // write content to the page based on user action
 // manipulate html/css elements
-// variables to remember and recall states
 
+// variables to remember and recall states
 // small functions into larger functions
 
 
-// ! WRITE alert ONCLICK
+// WRITE alert ONCLICK
 
 function save(event) {
 	alert("Saved!");
@@ -19,11 +19,13 @@ function linkInfo(event) {
 
 // RESET elements ONCLICK
 
-function resetTextNB(event) {
+function resetLecture(event) {
 	document.getElementById('notebookArea').value = "";
 }
 
-function resetTextR(event) {
+function resetStudio(event) {
+	document.getElementById('sketchImg').src = "http://placehold.it/500x500/dddddd/dddddd";
+	document.getElementById('inputFile').value = "";
 	var radioEls = document.querySelectorAll('#rating input[type="radio"]:checked');
 		for (var radio of radioEls){
 			radio.checked = false;
@@ -31,7 +33,9 @@ function resetTextR(event) {
 	document.getElementById('reflectionArea').value = "";
 }
 
-function resetTextC(event) {
+function resetCritique(event) {
+	document.getElementById('selection1img').src = "http://placehold.it/500x500/dddddd/dddddd";
+	document.getElementById('selection2img').src = "http://placehold.it/500x500/dddddd/dddddd";
 	var checkboxCritique = document.querySelectorAll('#critiqueInputs input[type="checkbox"]:checked')
 		for (var checkbox of checkboxCritique) {
 			checkbox.checked = false;
@@ -40,6 +44,19 @@ function resetTextC(event) {
 }
 
 // DISPLAY image ONCLICK
+
+function displayImgS() {
+	var preview = document.getElementById('sketchImg');
+	var file    = document.querySelector('input[type=file]').files[0];
+	var reader  = new FileReader();
+	reader.addEventListener("load", function () {
+	    preview.src = reader.result;
+	  }, false);
+	  if (file) {
+	    reader.readAsDataURL(file);
+	  }
+// this code is from https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL
+}
 
 function displayImgC1(event) {
 	var imgEl = document.getElementById('selection1img');

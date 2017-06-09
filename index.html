@@ -197,7 +197,7 @@
 							<button class="btn btn-success" onclick="save()">
               	Save
             	</button>
-							<button class="btn btn-danger" onclick="resetTextNB()">
+							<button class="btn btn-danger" onclick="resetLecture()">
 							   Reset
 							</button>
 						</div>
@@ -256,8 +256,8 @@
 								<label for="inputFile">
 									<strong>1. Upload your sketch here.</strong>
 								</label>
-								<input type="file" id="inputFile" />
-								<img src="http://placehold.it/500x500/e9e9e9/e9e9e9" class="img-responsive" />
+								<input type="file" id="inputFile" onchange="displayImgS()" />
+								<img id="sketchImg" src="http://placehold.it/500x500/dddddd/dddddd" class="img-responsive" />
 							</div>
 							<!--- end #uploadSketch --->
 							<p>
@@ -293,7 +293,7 @@
 							<button class="btn btn-success" onclick="save()">
               	Save
         			</button>
-							<button class="btn btn-danger" onclick="resetTextR()">
+							<button class="btn btn-danger" onclick="resetStudio()">
 						    Reset
 							</button>
 						</div>
@@ -365,7 +365,7 @@
 											submit
 										</button>
 									</div>
-									<img id="selection1img" src="http://placehold.it/500x500/e9e9e9/e9e9e9" class="img-responsive" />
+									<img id="selection1img" src="http://placehold.it/500x500/dddddd/dddddd" class="img-responsive" />
 								</div>
 								<!--- end #critique1 --->
 								<div id="critique2" class="col-xs-6">
@@ -384,7 +384,7 @@
 											submit
 										</button>
 									</div>
-									<img id="selection2img" src="http://placehold.it/500x500/e9e9e9/e9e9e9" class="img-responsive" />
+									<img id="selection2img" src="http://placehold.it/500x500/dddddd/dddddd" class="img-responsive" />
 								</div>
 								<!--- end #critique2 --->
 							</div>
@@ -401,7 +401,7 @@
 								<button class="btn btn-success" onclick="save()">
                 	Save
           			</button>
-								<button class="btn btn-danger" onclick="resetTextC()">
+								<button class="btn btn-danger" onclick="resetCritique()">
 							    Reset
 								</button>
 							</div>
