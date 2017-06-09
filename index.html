@@ -197,8 +197,8 @@
 							<button class="btn btn-success" onclick="save()">
               	Save
             	</button>
-							<button class="btn btn-danger" onclick="clearTextNB()">
-							   Clear
+							<button class="btn btn-danger" onclick="resetTextNB()">
+							   Reset
 							</button>
 						</div>
 						<!--- end #notebook --->
@@ -293,8 +293,8 @@
 							<button class="btn btn-success" onclick="save()">
               	Save
         			</button>
-							<button class="btn btn-danger" onclick="clearTextR()">
-						    Clear
+							<button class="btn btn-danger" onclick="resetTextR()">
+						    Reset
 							</button>
 						</div>
 						<!--- end #studioAssignment --->
@@ -348,45 +348,37 @@
 							<p>
 								<strong>1. Select 2 example pieces to critique.</strong>
 							</p>
-							<div class="row">
-								<div id="selections" class="col-md-6">
-									<div class="form-group">
-										<label for="selection1">
-											Enter your first selection here.
-										</label>
-										<input type="url" class="form-control" id="selection1" placeholder="enter a URL" />
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />This piece is public domain or under a creative commons license.
-										</label>
-									</div>
-									<button type="submit" class="btn btn-btn-default">
+							<div id="critiqueInputs" class="row">
+								<div id="critique1" class="col-md-6">
+									<label for="selection1URL">
+										Enter your first selection here.
+									</label>
+									<input id="selection1URL" type="url" class="form-control" placeholder="enter a URL" />
+									<label>
+										<input id="selection1cb" name="license" type="checkbox" />This piece is public domain or under a creative commons license.
+									</label>
+									<button class="btn btn-info" onclick="displayImgC1()">
 										submit
 									</button>
-									<img src="http://placehold.it/500x500" class="img-responsive" />
+									<img id="selection1img" src="http://placehold.it/500x500" class="img-responsive" />
 								</div>
-								<!--- end .col --->
-								<div id="selections" class="col-md-6">
-									<div class="form-group">
-										<label for="selection2">
-											Enter your second selection here.
-										</label>
-										<input type="url" class="form-control" id="selection1" placeholder="enter a URL" />
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" />This piece is public domain or under a creative commons license.
-										</label>
-									</div>
-									<button type="submit" class="btn btn-btn-default">
+								<!--- end #critique1 --->
+								<div id="critique2" class="col-md-6">
+									<label for="selection2URL">
+										Enter your second selection here.
+									</label>
+									<input id="selection2URL" type="url" class="form-control" placeholder="enter a URL" />
+									<label>
+										<input id="selection2cb" name="license" type="checkbox" />This piece is public domain or under a creative commons license.
+									</label>
+									<button id="selection2submit" type="button" class="btn btn-info" onclick="displayImgC2">
 										submit
 									</button>
-									<img src="http://placehold.it/500x500" class="img-responsive" />
+									<img id="selection2img" src="http://placehold.it/500x500" class="img-responsive" />
 								</div>
-								<!--- end .col --->
+								<!--- end #critique2 --->
 							</div>
-							<!--- end .row --->
+							<!--- end #critiqueInputs --->
 							<p>
 								<strong>2. Write a critique on the pieces.</strong>
 							</p>
@@ -399,8 +391,8 @@
 								<button class="btn btn-success" onclick="save()">
                 	Save
           			</button>
-								<button class="btn btn-danger" onclick="clearTextC()">
-							    Clear
+								<button class="btn btn-danger" onclick="resetTextC()">
+							    Reset
 								</button>
 							</div>
 							<!--- end #critique --->
