@@ -62,6 +62,8 @@ h1.h1jumbotron {
 	text-transform: lowercase;
 	color:#337AB7;
 	font-weight: 500;
+	border-style: none;
+	border-radius: 5px;
 	}
 h1 {
 	margin-bottom:35px;
