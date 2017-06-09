@@ -254,7 +254,7 @@
 							</h1>
 							<div id="uploadSketch" class="form-group">
 								<label for="inputFile">
-									1. Upload your sketch here.
+									<strong>1. Upload your sketch here.</strong>
 								</label>
 								<input type="file" id="inputFile" />
 								<img src="http://placehold.it/500x500" class="img-responsive" />
@@ -349,31 +349,41 @@
 								<strong>1. Select 2 example pieces to critique.</strong>
 							</p>
 							<div id="critiqueInputs" class="row">
-								<div id="critique1" class="col-md-6">
-									<label for="selection1URL">
+								<div id="critique1" class="col-xs-6">
+									<label id="sel1Lable" for="selection1URL">
 										Enter your first selection here.
+										<button class="btn btn-link btn-sm" onclick="linkInfo()">
+											<span class="glyphicon glyphicon-info-sign"></span>
+										</button>
 									</label>
-									<input id="selection1URL" type="url" class="form-control" placeholder="enter a URL" />
-									<label>
-										<input id="selection1cb" name="license" type="checkbox" />This piece is public domain or under a creative commons license.
+									<input id="selection1URL" type="url" class="form-control" placeholder="enter image's url" />
+									<label id="selection1cb">
+										<input name="license" type="checkbox" /> This piece is public domain or under a creative commons license.
 									</label>
-									<button class="btn btn-info" onclick="displayImgC1()">
-										submit
-									</button>
-									<img id="selection1img" src="http://www.metmuseum.org/art/collection/search/459172" class="img-responsive" />
+									<div>
+										<button class="btn btn-info" onclick="displayImgC1()">
+											submit
+										</button>
+									</div>
+									<img id="selection1img" src="http://placehold.it/500x500" class="img-responsive" />
 								</div>
 								<!--- end #critique1 --->
-								<div id="critique2" class="col-md-6">
-									<label for="selection2URL">
+								<div id="critique2" class="col-xs-6">
+									<label id="sel2Lable" for="selection2URL">
 										Enter your second selection here.
+										<button class="btn btn-link btn-sm" onclick="linkInfo()">
+											<span class="glyphicon glyphicon-info-sign"></span>
+										</button>
 									</label>
-									<input id="selection2URL" type="url" class="form-control" placeholder="enter a URL" />
-									<label>
-										<input id="selection2cb" name="license" type="checkbox" />This piece is public domain or under a creative commons license.
+									<input id="selection2URL" type="url" class="form-control" placeholder="enter image's url" />
+									<label id="selection2cb">
+										<input name="license" type="checkbox" /> This piece is public domain or under a creative commons license.
 									</label>
-									<button id="selection2submit" type="button" class="btn btn-info" onclick="displayImgC2">
-										submit
-									</button>
+									<div>
+										<button class="btn btn-info" onclick="displayImgC2()">
+											submit
+										</button>
+									</div>
 									<img id="selection2img" src="http://placehold.it/500x500" class="img-responsive" />
 								</div>
 								<!--- end #critique2 --->

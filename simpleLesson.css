@@ -4,14 +4,14 @@
 /* hides lesson content */
 
 #lectureContent {
-	display:none; 
-	}	
+	display:none;
+	}
 #studioContent {
-	display:none; 
-	}	
+	display:none;
+	}
 #critiqueContent {
-	display:none; 
-	}	
+	display:none;
+	}
 
 /* site header */
 
@@ -36,17 +36,17 @@
 	}
 #siteTitle a:hover {
 	text-decoration:none !important;
-	}				
+	}
 #nav {
 	margin-bottom:50px;
 	border-bottom:solid 2px #EEE;
-	padding-bottom: 10px; 
-	}	
+	padding-bottom: 10px;
+	}
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
 	background-color:#ED6237;
 	}
-	
-/* content - main pages*/
+
+/* content - main pages */
 
 #content {
 	padding-bottom:50px;
@@ -64,29 +64,41 @@ h1.h1jumbotron {
 	}
 h1 {
 	margin-bottom:35px;
-	}	
+	}
 #directions li {
 	padding-bottom:10px;
-	}	
+	}
 #notebook textarea, #reflectionArea, #critiqueArea {
 	margin-bottom:15px;
-	}	
+	}
 #inputFile {
 	margin-bottom:10px;
-	}	
+	}
 #uploadSketch, #rating {
 	margin-bottom:25px;
 	}
 #rating label {
 	padding-right:15px;
-	}		
-#critiqueAssignment button.btn.btn-btn-default, #critiqueAssignment .checkbox	{
+	}
+#critiqueAssignment button.btn.btn-info	{
 	margin-bottom:20px;
 	}
-#selections img.img-responsive {
+#sel1Lable, #sel2Lable {
+	margin-bottom:2px;
+	}
+#selection1URL, #selection1cb, #selection2URL, #selection2cb {
+	margin-bottom:15px;
+	}
+#selection1img, #selection2img {
 	margin-bottom:35px;
-	}		
-	
+	}
+.glyphicon-info-sign {
+	padding-bottom:8px;
+	}
+label {
+	font-weight:normal;
+}
+
 /* content - teacher page */
 
 #courseDescription li {
@@ -97,8 +109,7 @@ h1 {
 	}
 #sidebar {
 	padding-top:25px;
-	}	
+	}
 #sidebar li {
 	padding-bottom:10px;
 	}
-		

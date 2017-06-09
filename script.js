@@ -13,6 +13,10 @@ function save(event) {
 	alert("Saved!");
 }
 
+function linkInfo(event) {
+	alert("Be sure to use the image's URL, not the webpage's URL. You can find the image URL by right-clicking on the image.");
+}
+
 // RESET elements ONCLICK
 
 function resetTextNB(event) {
@@ -38,11 +42,13 @@ function resetTextC(event) {
 // DISPLAY image ONCLICK
 
 function displayImgC1(event) {
-	alert("just checking");
 	var imgEl = document.getElementById('selection1img');
-	alert(imgEl);
 	var imgSrc = document.getElementById('selection1URL').value;
-	alert(imgSrc);
 	imgEl.src = imgSrc;
-	alert(imgEl.src);
+}
+
+function displayImgC2(event) {
+	var imgEl = document.getElementById('selection2img');
+	var imgSrc = document.getElementById('selection2URL').value;
+	imgEl.src = imgSrc;
 }
