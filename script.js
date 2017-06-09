@@ -40,5 +40,6 @@ function resetTextC(event) {
 function displayImgC1(event) {
 	alert("just checking");
 	var imgEl = document.getElementById('selection1img');
-	imgEl.src = document.getElementById('selection1URL').src;
+	var imgSrc = document.getElementById('selection1URL').src;
+	imgEl.src = imgSrc;
 }
