@@ -20,7 +20,7 @@
 	margin-bottom:25px;
 	}
 #logInGuide{
-	margin-top:5px;
+	margin-bottom:5px;
 	text-align: right;
 	color:#999;
 	letter-spacing:1px;
@@ -56,7 +56,7 @@ h1.h1jumbotron {
 	}
 #lessonNav {
 	margin-bottom:10px;
-	border-bottom:2px solid #EEE;
+	border-bottom:2px solid #ececec;
 	}
 #introButton, #lectureButton, #studioButton, #critiqueButton {
 	text-transform: lowercase;
