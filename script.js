@@ -50,7 +50,7 @@ function displayImgS() {
 	    reader.readAsDataURL(file);
 	  }
 }
-// this code is from https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL
+// above code is from https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL
 
 function displayImgC1(event) {
 	var imgEl = document.getElementById('selection1img');
@@ -63,3 +63,5 @@ function displayImgC2(event) {
 	var imgSrc = document.getElementById('selection2URL').value;
 	imgEl.src = imgSrc;
 }
+
+// log in page
