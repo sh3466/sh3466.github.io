@@ -1,11 +1,3 @@
-// html: onEvent="someFunc(event)" pattern
-// listen for events - click, change, blur ...
-// write content to the page based on user action
-// manipulate html/css elements
-
-// variables to remember and recall states
-// small functions into larger functions
-
 
 // WRITE alert ONCLICK
 
@@ -45,7 +37,7 @@ function resetCritique(event) {
 	document.getElementById('critiqueArea').value = "";
 }
 
-// DISPLAY image ONCLICK
+// DISPLAY image ONCLICK or ONCHANGE
 
 function displayImgS() {
 	var preview = document.getElementById('sketchImg');
@@ -57,8 +49,8 @@ function displayImgS() {
 	  if (file) {
 	    reader.readAsDataURL(file);
 	  }
-// this code is from https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL
 }
+// this code is from https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL
 
 function displayImgC1(event) {
 	var imgEl = document.getElementById('selection1img');
