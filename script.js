@@ -36,6 +36,8 @@ function resetStudio(event) {
 function resetCritique(event) {
 	document.getElementById('selection1img').src = "http://placehold.it/500x500/dddddd/dddddd";
 	document.getElementById('selection2img').src = "http://placehold.it/500x500/dddddd/dddddd";
+	document.getElementById('selection1URL').value = "";
+	document.getElementById('selection2URL').value = "";
 	var checkboxCritique = document.querySelectorAll('#critiqueInputs input[type="checkbox"]:checked')
 		for (var checkbox of checkboxCritique) {
 			checkbox.checked = false;
