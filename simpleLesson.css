@@ -59,8 +59,7 @@ h1.h1jumbotron {
 	border-bottom:2px solid #EEE;
 	}
 #introButton, #lectureButton, #studioButton, #critiqueButton {
-	text-transform:uppercase;
-	font-weight:bolder;
+	text-transform: lowercase;
 	}
 h1 {
 	margin-bottom:35px;
