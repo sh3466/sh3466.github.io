@@ -19,11 +19,14 @@
 	margin-top:25px;
 	margin-bottom:25px;
 	}
-#logInGuide{
+#logInGuide {
 	margin-bottom:5px;
 	text-align: right;
 	color:#999;
 	letter-spacing:1px;
+	}
+#logInGuide a:hover {
+	text-decoration: none !important;
 	}
 .light {
 	color:#999;

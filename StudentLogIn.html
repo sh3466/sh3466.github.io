@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Simple Lesson | Student Log In</title>
+<title>Simple Lesson | Log In</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="simpleLesson.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -12,42 +12,45 @@
 <body>
 
 <!--- bootstrap container --->
-<div class="container"> 
+<div class="container">
 
 	<!--- site header --->
-	<div id="siteHeader">    	
-        
+	<div id="siteHeader">
+
 		<!--- site title, log in, guide --->
-        	<div id="stLIg" class="row">
-			<!--- site title --->
-			<div id="siteTitle" class="col-md-8">
-				<a href="index.html">
-					<span class="siteTitle">Introduction to <br/>Fine Art Techniques</span>
-				</a>
-			</div> <!--- end #siteTitle --->
+		<div id="stLIg" class="row">
 			<!--- log in and guide --->
-			<div id="logInGuide" class="col-md-4">
+			<div id="logInGuide" class="col-xs-12">
 				<a id="logIn" href="StudentLogIn.html">
-				    	<span class="light">student log in</span>
-				</a>
-				|
+					<span class="light">log in</span>
+				</a> |
 				<a id="guide" href="TeachersGuide.html">
-				    	<span class="light">teacher's guide</span>
+					<span class="light">syllabus</span>
 				</a>
-		    	</div> <!--- end #logInGuide --->        
-		</div> <!--- end #stLIg ---> 		
-	</div> <!--- end #siteHeader --->        
+			</div>
+			<!--- end #logInGuide --->
+			<!--- site title --->
+			<div id="siteTitle" class="col-xs-12">
+				<a href="index.html">
+					<span class="siteTitle">Introduction to <br>Fine Art Techniques</span>
+				</a>
+			</div>
+			<!--- end #siteTitle --->
+		</div>
+		<!--- end #stLIg --->
+
+	</div> <!--- end #siteHeader --->
 
 	<div id="comingSoon">
 		<h1>
-			Super awesome <br /> 
+			Super awesome <br />
 			registration, log in <br />
 			and profile page <br />
 			coming soon!
 		</h1>
 		<p>
-			<em>Details available under the Teacher's Guide link <br /> 
-			at the top of the page.</em> 
+			<em>Details available under the Teacher's Guide link <br />
+			at the top of the page.</em>
 		</p>
 		<br />
 		<p>
@@ -56,12 +59,12 @@
 		<select>
 			<option value="superExcited">super excited!</option>
 			<option value="sortOfExcited">sort of excited</option>
-		</select> 
+		</select>
 		<button id="submit" type="submit" class="btn btn-default btn-sm">
 			Submit
 		</button>
     	</div> <!--- end #comingSoon --->
-    
+
 </div> <!--- end .container --->
 
 </body>
