@@ -38,7 +38,7 @@ function resetTextC(event) {
 // DISPLAY image ONCLICK
 
 function displayImgC1(event) {
-	//alert("just checking");
+	alert("just checking");
 	var imgEl = document.getElementById('selection1img');
 	imgEl.src = document.getElementById('selection1URL');
 }
