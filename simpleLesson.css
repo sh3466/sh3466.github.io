@@ -61,6 +61,7 @@ h1.h1jumbotron {
 #introButton, #lectureButton, #studioButton, #critiqueButton {
 	text-transform: lowercase;
 	color:#337AB7;
+	font-weight: 500;
 	}
 h1 {
 	margin-bottom:35px;
