@@ -1,0 +1,11 @@
+.btn-group-justified {
+	margin-bottom: 10px;
+}
+.panel-body > pre {
+	margin-top: 15px;
+}
+.tags {
+	margin-top: 15px;
+	padding-top: 5px;
+	border-top: 1px solid #DDD;
+}
