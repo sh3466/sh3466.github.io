@@ -1,121 +1,149 @@
 @charset "UTF-8";
+
 /* CSS Document */
 
 /* hides lesson content */
 
 #lectureContent {
-	display:none;
-	}
+  display: none;
+}
+
 #studioContent {
-	display:none;
-	}
+  display: none;
+}
+
 #critiqueContent {
-	display:none;
-	}
+  display: none;
+}
 
 /* site header */
 
 #stLIg {
-	margin-top:25px;
-	margin-bottom:25px;
-	}
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 #logInGuide {
-	margin-bottom:5px;
-	text-align: right;
-	color:#999;
-	letter-spacing:1px;
-	}
+  margin-bottom: 5px;
+  text-align: right;
+  color: #999;
+  letter-spacing: 1px;
+}
+
 #logInGuide a:hover {
-	text-decoration: none !important;
-	}
+  text-decoration: none !important;
+}
+
 .light {
-	color:#999;
-	}
+  color: #999;
+}
+
 .siteTitle {
-	color: #337AB7;
-	font-size:35px;
-	line-height:normal;
-	text-transform:uppercase;
-	}
+  color: #337AB7;
+  font-size: 35px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 #siteTitle a:hover {
-	text-decoration:none !important;
-	}
+  text-decoration: none !important;
+}
+
 #nav {
-	margin-bottom:50px;
-	border-bottom:solid 2px #EEE;
-	padding-bottom: 10px;
-	}
+  margin-bottom: 50px;
+  border-bottom: solid 2px #EEE;
+  padding-bottom: 10px;
+}
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-	background-color:#ED6237;
-	}
+  background-color: #ED6237;
+}
 
 /* content - main pages */
 
 #content {
-	padding-bottom:50px;
-	}
+  padding-bottom: 50px;
+}
+
 h1.h1jumbotron {
-	color:#ED6237;
-	}
+  color: #ED6237;
+}
+
 #lessonNav {
-	margin-bottom:10px;
-	border-bottom:2px solid #ececec;
-	}
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ececec;
+}
+
 #introButton, #lectureButton, #studioButton, #critiqueButton {
-	text-transform: lowercase;
-	color:#337AB7;
-	font-weight: 500;
-	border-style: none;
-	border-radius: 5px;
-	}
+  text-transform: lowercase;
+  color: #337AB7;
+  font-weight: 500;
+  border-style: none;
+  border-radius: 5px;
+}
+
 h1 {
-	margin-bottom:35px;
-	}
+  margin-bottom: 35px;
+}
+
 #directions li {
-	padding-bottom:10px;
-	}
+  padding-bottom: 10px;
+}
+
 #notebook textarea, #reflectionArea, #critiqueArea {
-	margin-bottom:15px;
-	}
+  margin-bottom: 15px;
+}
+
 #inputFile {
-	margin-bottom:10px;
-	}
+  margin-bottom: 10px;
+}
+
 #uploadSketch, #rating {
-	margin-bottom:25px;
-	}
+  margin-bottom: 25px;
+}
+
 #rating label {
-	padding-right:15px;
-	}
-#critiqueAssignment button.btn.btn-info	{
-	margin-bottom:20px;
-	}
+  padding-right: 15px;
+}
+
+#critiqueAssignment button.btn.btn-info {
+  margin-bottom: 20px;
+}
+
 #sel1Lable, #sel2Lable {
-	margin-bottom:2px;
-	}
+  margin-bottom: 2px;
+}
+
 #selection1URL, #selection1cb, #selection2URL, #selection2cb {
-	margin-bottom:15px;
-	}
+  margin-bottom: 15px;
+}
+
 #selection1img, #selection2img {
-	margin-bottom:35px;
-	}
+  margin-bottom: 35px;
+}
+
 .glyphicon-info-sign {
-	padding-bottom:8px;
-	}
+  padding-bottom: 8px;
+}
+
 label {
-	font-weight:normal;
+  font-weight: normal;
 }
 
 /* content - teacher page */
 
 #courseDescription li {
-	padding-bottom:15px;
-	}
+  padding-bottom: 15px;
+}
+
 #courseDescription li.last {
-	padding-bottom:0px;
-	}
+  padding-bottom: 0px;
+}
+
 #sidebar {
-	padding-top:25px;
-	}
+  padding-top: 25px;
+}
+
 #sidebar li {
-	padding-bottom:10px;
-	}
+  padding-bottom: 10px;
+}
