@@ -65,3 +65,7 @@ function displayImgC2(event) {
 }
 
 // log in page
+
+function welcomeMessage(event) {
+	alert("User name not found. Use the \"Sign up\" form to register.");
+}
