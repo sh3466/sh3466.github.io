@@ -67,5 +67,20 @@ function displayImgC2(event) {
 // log in page
 
 function welcomeMessage(event) {
-	alert("User name not found. Use the \"Sign up\" form to register.");
+	alert("The email you've entered isn't in our system. Please use the \"Sign up\" form to register.");
+	document.getElementById("username").value = "";
+	document.getElementById("password").value = "";
+}
+
+function makeUserName() {
+	var firstName = document.getElementById("firstName").value;
+	var lastName = document.getElementById("lastName").value;
+	var userName = firstName + " " + lastName;
+	return userName;
+}
+
+function registrationMessage(event) {
+	var fullName = makeUserName();
+	var email = document.getElementById("email").value;
+	alert("Welcome, " + fullName + "! We've sent your password to " + email + ".");
 }
