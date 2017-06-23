@@ -28,8 +28,7 @@ function saveCritique(event) {
   localStorage.sel1img = document.getElementById("selection1img").src;
   localStorage.sel2URL = document.getElementById('selection2URL').value;
   localStorage.sel2img = document.getElementById("selection2img").src;
-  localStorage.checkboxes = document.getElementById('#critiqueInputs input[name="license"]:checked').value;
-  alert(checkboxes);
+//  localStorage.checkboxes = document.getElementById('#critiqueInputs input[name="license"]:checked').value;
   localStorage.critique = document.getElementById("critiqueArea").value;
   alert("Saved!");
 }

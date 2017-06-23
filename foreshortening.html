@@ -4,11 +4,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>foreshortening</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="final.css">
+	<link rel="stylesheet" href="main.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="script_final.js"></script>
 	<script src="script_array.js"></script>
+	<script src="script_pageGenerator.js"></script>
+	<script src="script_interactions.js"></script>
 </head>
 <body>
 
@@ -104,7 +105,7 @@
 			   			Notebook
 						</h1>
 						<textarea id="notebookArea" rows="10" class="form-control" placeholder="Your notes here."></textarea>
-						<button class="btn btn-success" onclick="save()">
+						<button class="btn btn-success" onclick="saveLecture()">
             	Save
           	</button>
 						<button class="btn btn-danger" onclick="resetLecture()">
@@ -149,23 +150,23 @@
 						</strong></p>
 						<div id="rating" class="radio">
 							<label>
-								<input type="radio" name="optionsRadios" id="1" value="option1" />
+								<input type="radio" name="optionsRadios" id="radio1" value="option1" />
 									Extremely successful
 							</label>
 							<label>
-								<input type="radio" name="optionsRadios" id="2" value="option2" />
+								<input type="radio" name="optionsRadios" id="radio2" value="option2" />
 									Very successful
 							</label>
 							<label>
-								<input type="radio" name="optionsRadios" id="3" value="option3" />
+								<input type="radio" name="optionsRadios" id="radio3" value="option3" />
 									Moderately successful
 							</label>
 							<label>
-								<input type="radio" name="optionsRadios" id="4" value="option4" />
+								<input type="radio" name="optionsRadios" id="radio4" value="option4" />
 									Slightly successful
 							</label>
 							<label>
-								<input type="radio" name="optionsRadios" id="5" value="option5" />
+								<input type="radio" name="optionsRadios" id="radio5" value="option5" />
 									Not at all successful
 							</label>
 						</div>
@@ -173,10 +174,10 @@
 							<!--- studioNum3() in script_pageGenerator.js --->
 						</strong></p>
 						<textarea id="reflectionArea" rows="10" class="form-control" placeholder="Your reflection."></textarea>
-						<button class="btn btn-success" onclick="save()">
+						<button class="btn btn-success" onclick="saveStudio()">
             	Save
       			</button>
-						<button class="btn btn-danger" onclick="resetStudio()">
+						<button class="btn btn-danger" onclick="resetStudio();">
 					    Reset
 						</button>
 					</div>
@@ -255,7 +256,7 @@
 						</p>
 						<div id="critique" class="form-group">
 							<textarea id="critiqueArea" rows="10" class="form-control" placeholder="Write a critique on the two pieces you have selected."></textarea>
-							<button class="btn btn-success" onclick="save()">
+							<button class="btn btn-success" onclick="saveCritique()">
               	Save
         			</button>
 							<button class="btn btn-danger" onclick="resetCritique()">
@@ -272,7 +273,7 @@
 
 </body>
 
-<script src="script_final.js"></script>
+<script src="script_interactions.js"></script>
 <script src="script_pageGenerator.js"></script>
 <script src="script_pageHeader.js"></script>
 <script src="script_nav.js"></script>
