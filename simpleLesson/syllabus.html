@@ -1,26 +1,45 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>login</title>
+	<title>Simple Lesson | Syllabus</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="final.css">
+	<link rel="stylesheet" href="simpleLesson.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="script_final.js"></script>
 </head>
+
 <body>
 
 	<!--- bootstrap container --->
 	<div class="container">
 
 		<!--- site header --->
-		<div id="logInSyllabus">
-			<!--- login and syllabus links from script_pageHeader.js --->
+		<div id="siteHeader">
+			<!--- site title, log in, guide --->
+			<div id="stLIg" class="row">
+				<!--- log in and guide --->
+				<div id="logInGuide" class="col-xs-12">
+					<a id="logIn" href="logIn.html">
+						<span class="light">login</span>
+					</a> |
+					<a id="guide" href="syllabus.html">
+						<span class="light">syllabus</span>
+					</a>
+				</div>
+				<!--- end #logInGuide --->
+				<!--- site title --->
+				<div id="siteTitle" class="col-xs-12">
+					<a href="index.html">
+						<span class="siteTitle">Introduction to <br>Fine Art Techniques</span>
+					</a>
+				</div>
+				<!--- end #siteTitle --->
+			</div>
+			<!--- end #stLIg --->
 		</div>
-		<div id="siteTitle">
-			<!--- siteTitle from script_pageHeader.js --->
-		</div>
+		<!--- end #siteHeader --->
 
 		<!--- content --->
 		<div id="content">
@@ -122,8 +141,5 @@
 	<!--- end .container --->
 
 </body>
-<script src="script_final.js"></script>
-<script src="script_pageGenerator.js"></script>
-<script src="script_pageHeader.js"></script>
-<script src="script_nav.js"></script>
+
 </html>

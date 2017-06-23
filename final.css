@@ -18,19 +18,19 @@
 
 /* site header */
 
-#stLIg {
-  margin-top: 25px;
+#siteTitle {
   margin-bottom: 25px;
 }
 
-#logInGuide {
+#logInSyllabus {
+  margin-top:25px;
   margin-bottom: 5px;
   text-align: right;
   color: #999;
   letter-spacing: 1px;
 }
 
-#logInGuide a:hover {
+#logInSyllabus a:hover {
   text-decoration: none !important;
 }
 
@@ -61,7 +61,7 @@
 
 /* content - main pages */
 
-#content {
+.container {
   padding-bottom: 50px;
 }
 
@@ -128,6 +128,10 @@ h1 {
 
 label {
   font-weight: normal;
+}
+
+#critiqueNum2 {
+  padding-bottom:10px;
 }
 
 /* content - teacher page */
