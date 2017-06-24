@@ -188,21 +188,21 @@ function uploadInfo(event) {
 
 function setStudioImage() {
   if (localStorage.getItem(document.title + ".sketch") === null) {
-    var locSS = "http://placehold.it/500x500/dddddd/dddddd";
+    var locSS = "https://placehold.it/500x500/dddddd/dddddd";
 		localStorage.setItem(document.title + ".sketch", locSS);
   }
 }
 
 function setCritiqueImage1() {
   if (localStorage.getItem(document.title + ".sel1IMG") === null) {
-		var loc1IMGS = "http://placehold.it/500x500/dddddd/dddddd";
+		var loc1IMGS = "https://placehold.it/500x500/dddddd/dddddd";
 		localStorage.setItem(document.title + ".sel1IMG", loc1IMGS);
   }
 }
 
 function setCritiqueImage2() {
   if (localStorage.getItem(document.title + ".sel2IMG") === null) {
-		var loc2IMGS = "http://placehold.it/500x500/dddddd/dddddd";
+		var loc2IMGS = "https://placehold.it/500x500/dddddd/dddddd";
 		localStorage.setItem(document.title + ".sel2IMG", loc2IMGS);
   }
 }
