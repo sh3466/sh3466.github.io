@@ -3,9 +3,9 @@
 // INTERACTIONS
 
 // setup from script_pageGenerator.js
-setStudioImage();
-setCritiqueImage1();
-setCritiqueImage2();
+//setStudioImage();
+//setCritiqueImage1();
+//setCritiqueImage2();
 loadPreviousInputs();
 
 // SAVE TO LOCALSTORAGE
