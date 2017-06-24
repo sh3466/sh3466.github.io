@@ -57,7 +57,7 @@ function resetLecture(event) {
 
 function resetStudio(event) {
   localStorage.removeItem(document.title + ".sketch");
-  document.getElementById('sketchImg').src = "http://placehold.it/500x500/dddddd/dddddd";
+  document.getElementById('sketchImg').src = "https://placehold.it/500x500/dddddd/dddddd";
   localStorage.removeItem(document.title + ".rating");
   var radios = document.querySelectorAll('#rating input[type="radio"]:checked');
     for (var option of radios) {
@@ -69,9 +69,9 @@ function resetStudio(event) {
 
 function resetCritique(event) {
   localStorage.removeItem(document.title + ".sel1IMG");
-  document.getElementById('selection1img').src = "http://placehold.it/500x500/dddddd/dddddd";
+  document.getElementById('selection1img').src = "https://placehold.it/500x500/dddddd/dddddd";
   localStorage.removeItem(document.title + ".sel2IMG");
-  document.getElementById('selection2img').src = "http://placehold.it/500x500/dddddd/dddddd";
+  document.getElementById('selection2img').src = "https://placehold.it/500x500/dddddd/dddddd";
   localStorage.removeItem(document.title + ".sel1URL");
   document.getElementById('selection1URL').value = "";
   localStorage.removeItem(document.title + ".sel2URL");
