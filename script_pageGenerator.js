@@ -225,6 +225,9 @@ function loadPreviousInputs() {
 		 	var itemNameRadio = title + stringRadio;
 			// document.querySelector("[name='optionsRadios']:checked").value = localStorage.getItem(itemNameRadio);
 
+			var input = document.querySelector('[name="optionsRadios"][value="' + localStorage.getItem("chiaroscuro.rating") + '"]');
+					input.checked = true;
+
 			var stringReflection = ".reflection";
 			var itemNameReflection = title + stringReflection;
 			document.getElementById("reflectionArea").value = localStorage.getItem(itemNameReflection);
