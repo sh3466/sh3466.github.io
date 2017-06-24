@@ -21,8 +21,8 @@ function saveStudio(event) {
   localStorage.setItem(document.title + ".sketch", locS);
   var locR = document.getElementById("reflectionArea").value;
   localStorage.setItem(document.title + ".reflection", locR);
-  // var radioSetResponse = document.querySelector("[name='optionsRadios']:checked").value;
-  // localStorage.setItem("response", radioSetResponse);
+  var locRS = document.querySelector("[name='optionsRadios']:checked").value;
+  localStorage.setItem(document.title + ".rating", locRS);
   alert("Saved!");
 }
 
@@ -35,9 +35,16 @@ function saveCritique(event) {
   localStorage.setItem(document.title + ".sel2URL", loc2URL);
   var loc2IMG = document.getElementById("selection2img").src;
   localStorage.setItem(document.title + ".sel2IMG", loc2IMG);
+  var locCB = document.querySelectorAll('input[name=license]');
+  for (x of locCB) {
+    if (x.checked === true) {
+      localStorage.setItem(document.title + ".license." + x.id, x.id);
+    } else {
+      localStorage.removeItem(document.title + ".license." + x.id, x.id);
+    }
+  }
   var locC = document.getElementById("critiqueArea").value;
   localStorage.setItem(document.title + ".critique", locC);
-  // localStorage.checkboxes = document.getElementById('#critiqueInputs input[name="license"]:checked').value;
   alert("Saved!");
 }
 
@@ -51,9 +58,11 @@ function resetLecture(event) {
 function resetStudio(event) {
   localStorage.removeItem(document.title + ".sketch");
   document.getElementById('sketchImg').src = "http://placehold.it/500x500/dddddd/dddddd";
-  // localStorage.sketch = document.getElementById('sketchImg').src;
-  // localStorage.removeItem(document.title + ".response");
-  $("input:checked").removeAttr("checked");
+  localStorage.removeItem(document.title + ".rating");
+  var radios = document.querySelectorAll('#rating input[type="radio"]:checked');
+    for (var option of radios) {
+      option.checked = false;
+    }
   localStorage.removeItem(document.title + ".reflection");
   document.getElementById('reflectionArea').value = "";
 }
@@ -67,9 +76,10 @@ function resetCritique(event) {
   document.getElementById('selection1URL').value = "";
   localStorage.removeItem(document.title + ".sel2URL");
   document.getElementById('selection2URL').value = "";
-  var checkboxCritique = document.querySelectorAll('#critiqueInputs input[type="checkbox"]:checked')
-  for (var checkbox of checkboxCritique) {
-    checkbox.checked = false;
+  var locCB = document.querySelectorAll('input[name=license]');
+  for (x of locCB) {
+    x.checked = false;
+    localStorage.removeItem(document.title + ".license." + x.id, x.id);
   }
   localStorage.removeItem(document.title + ".critique");
   document.getElementById('critiqueArea').value = "";

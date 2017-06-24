@@ -221,6 +221,10 @@ function loadPreviousInputs() {
 			var itemNameSketch = title + stringSketch;
 			document.getElementById("sketchImg").src = localStorage.getItem(itemNameSketch);
 
+			var stringRadio = ".rating";
+		 	var itemNameRadio = title + stringRadio;
+			// document.querySelector("[name='optionsRadios']:checked").value = localStorage.getItem(itemNameRadio);
+
 			var stringReflection = ".reflection";
 			var itemNameReflection = title + stringReflection;
 			document.getElementById("reflectionArea").value = localStorage.getItem(itemNameReflection);
@@ -240,6 +244,13 @@ function loadPreviousInputs() {
 			var string2IMG = ".sel2IMG";
 			var itemName2IMG = title + string2IMG;
 			document.getElementById("selection2img").src = localStorage.getItem(itemName2IMG);
+
+			var checks = document.querySelectorAll('input[name=license]');
+			for (x of checks) {
+				var stringChecks = ".license." + x.id;
+				var itemNameChecks = title + stringChecks;
+				// document.querySelectorAll('input[name=license]').checked = localStorage.getItem("itemNameChecks");
+			}
 
 			var stringCritique = ".critique";
 			var itemNameCritique = title + stringCritique;
