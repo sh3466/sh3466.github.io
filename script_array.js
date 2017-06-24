@@ -18,7 +18,7 @@ var pages = [
 		lectureVideo: "https://www.youtube.com/embed/V3WmrWUEIJo",
 		studioDirections: "Watch the video. Choose 1-2 of the forms to sketch. Feel free to replay the video as you sketch. Upload your sketch below. Rate your sketch's successfulness. Finally, write a reflection on your experience with applying chiaroscuro and your sketch's successfulness in relation to chiaroscuro.",
 		studioVideo: "https://www.youtube.com/embed/vMr6eimcolc",
-		critiqueDirections: "Watch the video. Consider the artist's technical as well as evocative use of chiaroscuro. Select 2 example pieces to critique. Consider using the Met's online collection or behance.net. Provide links to the selected pieces below. Finally, write a critique on the pieces. Further directions below.",
+		critiqueDirections: "Watch the video. Consider the artist's technical as well as evocative use of chiaroscuro. Select 2 example pieces to critique. Consider using the <a href=http://www.metmuseum.org/art/collection>Met's</a> online collection or <a href=https://www.behance.net/>behance.net</a>. Provide links to the selected pieces below. Finally, write a critique on the pieces. Further directions below.",
 		critiqueVideo: "https://www.youtube.com/embed/9whgBqmELIk",
 		critiqueSubDirections: "For each selection, describe the piece in terms of artist, medium, title, date, location and subject matter. Then analyze each piece in terms of how the work is constructed with regards to chiaroscuro, including points of emphasis. Finally, describe how each piece makes you think or feel. Be sure to compare and contrast your selections."
 	},
@@ -34,7 +34,7 @@ var pages = [
 		lectureVideo: "https://www.youtube.com/embed/B4ac6Toj-Ho",
 		studioDirections: "Watch the video. Choose 1-2 of the forms to sketch. Feel free to replay the video as you sketch. Upload your sketch below. Rate your sketch's successfulness. Finally, write a reflection on your experience with applying foreshortening and your sketch's successfulness in relation to foreshortening.",
 		studioVideo: "https://www.youtube.com/embed/eJWLaDSNBAI",
-		critiqueDirections: "Watch the video. Consider the artist's technical as well as evocative use of foreshortening. Select 2 example pieces to critique. Consider using the Met's online collection or behance.net. Provide links to the selected pieces below. Finally, write a critique on the pieces. Further directions below.",
+		critiqueDirections: "Watch the video. Consider the artist's technical as well as evocative use of foreshortening. Select 2 example pieces to critique. Consider using the <a href=http://www.metmuseum.org/art/collection>Met's</a> online collection or <a href=https://www.behance.net/>behance.net</a>. Provide links to the selected pieces below. Finally, write a critique on the pieces. Further directions below.",
 		critiqueVideo: "https://www.youtube.com/embed/IiB8Cvhhvvw",
 		critiqueSubDirections: "For each selection, describe the piece in terms of artist, medium, title, date, location and subject matter. Then analyze each piece in terms of how the work is constructed with regards to foreshortening, including points of emphasis. Finally, describe how each piece makes you think or feel. Be sure to compare and contrast your selections."
 	},

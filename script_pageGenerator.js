@@ -174,6 +174,16 @@ function critiqueNum2() {
 }
 critiqueNum2();
 
+// INFO ICONS
+
+function linkInfo(event) {
+  alert("Be sure to use the image's URL, not the webpage's URL. You can find the image URL by right-clicking on the image. Then choose \"copy image address\".");
+}
+
+function uploadInfo(event) {
+  alert("Images size should not exceed 4 MB.");
+}
+
 // LOAD PLACEHOLDER IMAGES
 
 function setStudioImage() {
@@ -200,6 +210,45 @@ function setCritiqueImage2() {
 // LOAD LOCALSTORAGE
 
 function loadPreviousInputs() {
+	for (tech of pages) {
+		var title = document.title;
+		if (tech.technique === document.title) {
+			var stringNotes = ".notes";
+			var itemNameNotes = title + stringNotes;
+			document.getElementById("notebookArea").value = localStorage.getItem(itemNameNotes);
+
+			var stringSketch = ".sketch";
+			var itemNameSketch = title + stringSketch;
+			document.getElementById("sketchImg").src = localStorage.getItem(itemNameSketch);
+
+			var stringReflection = ".reflection";
+			var itemNameReflection = title + stringReflection;
+			document.getElementById("reflectionArea").value = localStorage.getItem(itemNameReflection);
+
+			var string1URL = ".sel1URL";
+			var itemName1URL = title + string1URL;
+			document.getElementById("selection1URL").value = localStorage.getItem(itemName1URL);
+
+			var string1IMG = ".sel1IMG";
+			var itemName1IMG = title + string1IMG;
+			document.getElementById("selection1img").src = localStorage.getItem(itemName1IMG);
+
+			var string2URL = ".sel2URL";
+			var itemName2URL = title + string2URL;
+			document.getElementById("selection2URL").value = localStorage.getItem(itemName2URL);
+
+			var string2IMG = ".sel2IMG";
+			var itemName2IMG = title + string2IMG;
+			document.getElementById("selection2img").src = localStorage.getItem(itemName2IMG);
+
+			var stringCritique = ".critique";
+			var itemNameCritique = title + stringCritique;
+			document.getElementById("critiqueArea").value = localStorage.getItem(itemNameCritique);
+		}
+	}
+}
+
+/*
   document.getElementById("notebookArea").value = localStorage.getItem("notes");
   document.getElementById("sketchImg").src = localStorage.getItem("sketch");
 //document.querySelector("[name='optionsRadios']:checked").value = localStorage.getItem("response");
@@ -209,4 +258,4 @@ function loadPreviousInputs() {
 	document.getElementById('selection2URL').value = localStorage.getItem("sel2URL");
   document.getElementById("selection2img").src = localStorage.getItem("sel2img");
   document.getElementById("critiqueArea").value = localStorage.getItem("critique");
-}
+}*/
