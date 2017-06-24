@@ -188,28 +188,22 @@ function uploadInfo(event) {
 
 function setStudioImage() {
   if (localStorage.getItem(document.title + ".sketch") === null) {
-    document.getElementById('sketchImg').src = "http://placehold.it/500x500/dddddd/dddddd";
-		var stringSketch = ".sketch";
-		var itemNameSketch = title + stringSketch;
-		document.getElementById("sketchImg").src = localStorage.getItem(itemNameSketch);
+    var locSS = "http://placehold.it/500x500/dddddd/dddddd";
+		localStorage.setItem(document.title + ".sketch", locSS);
   }
 }
 
 function setCritiqueImage1() {
-  if (localStorage.getItem(document.title + ".sel1img") === null) {
-    document.getElementById('selection1img').src = "http://placehold.it/500x500/dddddd/dddddd";
-		var string1IMG = ".sel1IMG";
-		var itemName1IMG = title + string1IMG;
-		document.getElementById("selection1img").src = localStorage.getItem(itemName1IMG);
+  if (localStorage.getItem(document.title + ".sel1IMG") === null) {
+		var loc1IMGS = "http://placehold.it/500x500/dddddd/dddddd";
+		localStorage.setItem(document.title + ".sel1IMG", loc1IMGS);
   }
 }
 
 function setCritiqueImage2() {
-  if (localStorage.getItem(document.title + ".sel2img") === null) {
-    document.getElementById('selection2img').src = "http://placehold.it/500x500/dddddd/dddddd";
-		var string2IMG = ".sel2IMG";
-		var itemName2IMG = title + string2IMG;
-		document.getElementById("selection2img").src = localStorage.getItem(itemName2IMG);
+  if (localStorage.getItem(document.title + ".sel2IMG") === null) {
+		var loc2IMGS = "http://placehold.it/500x500/dddddd/dddddd";
+		localStorage.setItem(document.title + ".sel2IMG", loc2IMGS);
   }
 }
 

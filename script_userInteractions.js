@@ -1,6 +1,6 @@
 // localStorage.clear()
 
-// INTERACTIONS
+// USER INTERACTIONS
 
 // setup from script_pageGenerator.js
 setStudioImage();
@@ -59,9 +59,9 @@ function resetStudio(event) {
 }
 
 function resetCritique(event) {
-  localStorage.removeItem(document.title + ".sel1img");
+  localStorage.removeItem(document.title + ".sel1IMG");
   document.getElementById('selection1img').src = "http://placehold.it/500x500/dddddd/dddddd";
-  localStorage.removeItem(document.title + ".sel2img");
+  localStorage.removeItem(document.title + ".sel2IMG");
   document.getElementById('selection2img').src = "http://placehold.it/500x500/dddddd/dddddd";
   localStorage.removeItem(document.title + ".sel1URL");
   document.getElementById('selection1URL').value = "";

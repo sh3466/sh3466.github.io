@@ -1,4 +1,4 @@
-// ARRAY
+// ARRAY FOR PAGE CONTENT
 
 var pages = [
 	{
