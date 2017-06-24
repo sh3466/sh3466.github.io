@@ -35,14 +35,6 @@ function saveCritique(event) {
   localStorage.setItem(document.title + ".sel2URL", loc2URL);
   var loc2IMG = document.getElementById("selection2img").src;
   localStorage.setItem(document.title + ".sel2IMG", loc2IMG);
-  var locCB = document.querySelectorAll('input[name=license]');
-  for (x of locCB) {
-    if (x.checked === true) {
-      localStorage.setItem(document.title + ".license." + x.id, x.id);
-    } else {
-      localStorage.removeItem(document.title + ".license." + x.id, x.id);
-    }
-  }
   var locC = document.getElementById("critiqueArea").value;
   localStorage.setItem(document.title + ".critique", locC);
   alert("Saved!");
@@ -76,11 +68,6 @@ function resetCritique(event) {
   document.getElementById('selection1URL').value = "";
   localStorage.removeItem(document.title + ".sel2URL");
   document.getElementById('selection2URL').value = "";
-  var locCB = document.querySelectorAll('input[name=license]');
-  for (x of locCB) {
-    x.checked = false;
-    localStorage.removeItem(document.title + ".license." + x.id, x.id);
-  }
   localStorage.removeItem(document.title + ".critique");
   document.getElementById('critiqueArea').value = "";
 }
