@@ -49,29 +49,29 @@ function resetLecture(event) {
 }
 
 function resetStudio(event) {
-  localStorage.removeItem('sketch');
+  localStorage.removeItem(document.title + ".sketch");
   document.getElementById('sketchImg').src = "http://placehold.it/500x500/dddddd/dddddd";
-  localStorage.sketch = document.getElementById('sketchImg').src;
-  localStorage.removeItem('response');
+  // localStorage.sketch = document.getElementById('sketchImg').src;
+  // localStorage.removeItem(document.title + ".response");
   $("input:checked").removeAttr("checked");
-  localStorage.removeItem('reflection');
+  localStorage.removeItem(document.title + ".reflection");
   document.getElementById('reflectionArea').value = "";
 }
 
 function resetCritique(event) {
-  localStorage.removeItem('sel1img');
+  localStorage.removeItem(document.title + ".sel1img");
   document.getElementById('selection1img').src = "http://placehold.it/500x500/dddddd/dddddd";
-  localStorage.removeItem('sel2img');
+  localStorage.removeItem(document.title + ".sel2img");
   document.getElementById('selection2img').src = "http://placehold.it/500x500/dddddd/dddddd";
-  localStorage.removeItem('sel1URL');
+  localStorage.removeItem(document.title + ".sel1URL");
   document.getElementById('selection1URL').value = "";
-  localStorage.removeItem('sel2URL');
+  localStorage.removeItem(document.title + ".sel2URL");
   document.getElementById('selection2URL').value = "";
   var checkboxCritique = document.querySelectorAll('#critiqueInputs input[type="checkbox"]:checked')
   for (var checkbox of checkboxCritique) {
     checkbox.checked = false;
   }
-  localStorage.removeItem('critique');
+  localStorage.removeItem(document.title + ".critique");
   document.getElementById('critiqueArea').value = "";
 }
 

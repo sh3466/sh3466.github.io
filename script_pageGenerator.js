@@ -247,15 +247,3 @@ function loadPreviousInputs() {
 		}
 	}
 }
-
-/*
-  document.getElementById("notebookArea").value = localStorage.getItem("notes");
-  document.getElementById("sketchImg").src = localStorage.getItem("sketch");
-//document.querySelector("[name='optionsRadios']:checked").value = localStorage.getItem("response");
-  document.getElementById("reflectionArea").value = localStorage.getItem("reflection");
-	document.getElementById('selection1URL').value = localStorage.getItem("sel1URL");
-	document.getElementById("selection1img").src = localStorage.getItem("sel1img");
-	document.getElementById('selection2URL').value = localStorage.getItem("sel2URL");
-  document.getElementById("selection2img").src = localStorage.getItem("sel2img");
-  document.getElementById("critiqueArea").value = localStorage.getItem("critique");
-}*/
