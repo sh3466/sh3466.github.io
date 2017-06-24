@@ -187,23 +187,23 @@ function uploadInfo(event) {
 // LOAD PLACEHOLDER IMAGES
 
 function setStudioImage() {
-  if (localStorage.getItem("sketch") === null) {
+  if (localStorage.getItem(document.title + ".sketch") === null) {
     document.getElementById('sketchImg').src = "http://placehold.it/500x500/dddddd/dddddd";
-    localStorage.sketch = document.getElementById('sketchImg').src;
+  //  localStorage.sketch = document.getElementById('sketchImg').src;
   }
 }
 
 function setCritiqueImage1() {
-  if (localStorage.getItem("sel1img") === null) {
+  if (localStorage.getItem(document.title + ".sel1img") === null) {
     document.getElementById('selection1img').src = "http://placehold.it/500x500/dddddd/dddddd";
-    localStorage.sel1img = document.getElementById('selection1img').src;
+  //  localStorage.sel1img = document.getElementById('selection1img').src;
   }
 }
 
 function setCritiqueImage2() {
-  if (localStorage.getItem("sel2img") === null) {
+  if (localStorage.getItem(document.title + ".sel2img") === null) {
     document.getElementById('selection2img').src = "http://placehold.it/500x500/dddddd/dddddd";
-    localStorage.sel2img = document.getElementById('selection2img').src;
+  //  localStorage.sel2img = document.getElementById('selection2img').src;
   }
 }
 
