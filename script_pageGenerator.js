@@ -185,7 +185,7 @@ function uploadInfo(event) {
 }
 
 // LOAD PLACEHOLDER IMAGES
-
+/*
 function setStudioImage() {
   if (localStorage.getItem(document.title + ".sketch") === null) {
     document.getElementById('sketchImg').src = "http://placehold.it/500x500/dddddd/dddddd";
@@ -205,7 +205,7 @@ function setCritiqueImage2() {
     document.getElementById('selection2img').src = "http://placehold.it/500x500/dddddd/dddddd";
   //  localStorage.sel2img = document.getElementById('selection2img').src;
   }
-}
+}*/
 
 // LOAD LOCALSTORAGE
 
