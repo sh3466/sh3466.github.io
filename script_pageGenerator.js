@@ -185,27 +185,33 @@ function uploadInfo(event) {
 }
 
 // LOAD PLACEHOLDER IMAGES
-/*
+
 function setStudioImage() {
   if (localStorage.getItem(document.title + ".sketch") === null) {
     document.getElementById('sketchImg').src = "http://placehold.it/500x500/dddddd/dddddd";
-  //  localStorage.sketch = document.getElementById('sketchImg').src;
+		var stringSketch = ".sketch";
+		var itemNameSketch = title + stringSketch;
+		document.getElementById("sketchImg").src = localStorage.getItem(itemNameSketch);
   }
 }
 
 function setCritiqueImage1() {
   if (localStorage.getItem(document.title + ".sel1img") === null) {
     document.getElementById('selection1img').src = "http://placehold.it/500x500/dddddd/dddddd";
-  //  localStorage.sel1img = document.getElementById('selection1img').src;
+		var string1IMG = ".sel1IMG";
+		var itemName1IMG = title + string1IMG;
+		document.getElementById("selection1img").src = localStorage.getItem(itemName1IMG);
   }
 }
 
 function setCritiqueImage2() {
   if (localStorage.getItem(document.title + ".sel2img") === null) {
     document.getElementById('selection2img').src = "http://placehold.it/500x500/dddddd/dddddd";
-  //  localStorage.sel2img = document.getElementById('selection2img').src;
+		var string2IMG = ".sel2IMG";
+		var itemName2IMG = title + string2IMG;
+		document.getElementById("selection2img").src = localStorage.getItem(itemName2IMG);
   }
-}*/
+}
 
 // LOAD LOCALSTORAGE
 
