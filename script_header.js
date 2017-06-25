@@ -3,7 +3,7 @@
 // SITE HEADER
 
 function siteHeader() {
-  document.getElementById("logInSyllabus").innerHTML = `<a href="logIn.html"><span class="light">login</span></a> | <a href="syllabus.html"><span class="light">syllabus</span></a>`;
+  document.getElementById("logInSyllabus").innerHTML = `<a href="profilePage.html"><span class="lightEm">Jane Doe</em></span></a> | <a href="syllabus.html"><span class="light">syllabus</span></a>`;
 }
 siteHeader();
 

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Profile Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="script_userInteractions.js"></script>
+	<script src="script_profilePage.js"></script>
+</head>
+<body>
+
+	<!--- bootstrap container --->
+	<div class="container">
+
+		<!--- site header --->
+		<div id="logInSyllabus">
+			<!--- login and syllabus links from script_pageHeader.js --->
+		</div>
+		<div id="siteTitle">
+			<!--- siteTitle from script_pageHeader.js --->
+		</div>
+
+		<!--- content --->
+		<div id="profilePageContent">
+			<div class="row">
+
+				<div id="profile" class="col-sm-3">
+					<div class="well">
+						<div id="profilePicDiv">
+							<img id="profilePicImg" src="http://images.metmuseum.org/CRDImages/ph/mobile-large/DP148347.jpg" class="img-responsive" />
+						</div>
+						<div id="userName">
+							<h4>Jane Doe</h4>
+						</div>
+						<div id="portfolioCount">
+							<p id="showPieces">
+								<!--- setPortfolioCount from script_profilePage.js --->
+							</span>
+						</div>
+					</div>
+
+					<div id="collectionPanel" class="panel-group">
+				    <div class="panel panel-default">
+				      <div class="panel-heading">
+				        <h4 class="panel-title">
+				          <a data-toggle="collapse" href="#collection">Collection</a>
+				        </h4>
+				      </div>
+				      <div id="collection" class="panel-collapse collapse">
+				        <div class="panel-body">
+									<p id="manageTitle" >MANAGE YOUR COLLECTION</p>
+									<p><strong>
+										Select pieces to include.
+									</strong></p>
+									<ul id="collectionList" class="list-unstyled">
+										<!--- collectionList from script_profilePage.js --->
+									</ul>
+									<button id="selectAllButton" onclick="selectAll()">Select All</button>
+									<button id="deselectAllButton" onclick="deselectAll()">Deselect All</button>
+									<p id="addNewPiece"><strong>
+										Add a new piece.
+									</strong></p>
+									<div class="form-group">
+										<input id="newItemTitle" type="text" class="form-control" placeholder="title" />
+									</div>
+									<div class="form-group">
+										<input id="newItemMedium" type="text" class="form-control" placeholder="medium" />
+									</div>
+									<div class="form-group">
+										<input id="newItemURL" type="url" class="form-control" placeholder="url" />
+									</div>
+									<button type="button" onclick="addCollectionItem()">enter</button>
+								</div>
+				      </div>
+				    </div>
+				  </div>
+
+					<div class="form-group">
+						<select  id="sort" onchange="sort()">
+							<option value="theme">Theme</option>
+							<option value="light">light</option>
+							<option value="dark">dark</option>
+						</select>
+					</div>
+				</div>
+
+				<div id="portfolio" class="col-sm-9">
+					<div class="row">
+						<div class="col-xs-9">
+							<h2 id="portfolioT" class="portfolioTitle">portfolio</h2>
+						</div>
+						<div class="col-xs-3">
+							<div id="portfolioButtons" class="btn-group" role="group">
+								<button id="galleryButton" type="button" class="btn btn-link btn-lg" onclick="showGallery()">
+									<span class="glyphicon glyphicon-th"></span>
+								</button>
+								<button id="listButton" type="button" class="btn btn-link btn-lg" onclick="showList()">
+									<span class="glyphicon glyphicon-th-list"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div id="galleryContent">
+						<ul id="galleryUL" class="list-unstyled">
+							<!--- portfolioGallery from script_profilePage.js --->
+						</ul>
+					</div>
+					<div id="listContent">
+						<ul id="listUL" class="list-unstyled">
+							<!--- portfolioList from script_profilePage.js --->
+						</ul>
+					</div>
+				</div>
+
+				</div>
+
+			</div>
+			<!--- end .row --->
+		</div>
+		<!--- end #content --->
+
+	</div>
+	<!--- end .container --->
+</body>
+<script src="script_userInteractions.js"></script>
+<script src="script_pageGenerator.js"></script>
+<script src="script_header.js"></script>
+<script src="script_profilePage.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+</html>
