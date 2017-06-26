@@ -213,6 +213,7 @@ function loadPreviousInputs() {
   for (tech of pages) {
     var title = document.title;
     if (tech.technique === document.title) {
+
       var stringNotes = ".notes";
       var itemNameNotes = title + stringNotes;
       document.getElementById("notebookArea").value = localStorage.getItem(itemNameNotes);
@@ -220,12 +221,12 @@ function loadPreviousInputs() {
       var stringSketch = ".sketch";
       var itemNameSketch = title + stringSketch;
       document.getElementById("sketchImg").src = localStorage.getItem(itemNameSketch);
-
+/*
       var stringRadio = ".rating";
       var itemNameRadio = title + stringRadio;
       var input = document.querySelector('[name="optionsRadios"][value="' + localStorage.getItem(itemNameRadio) + '"]');
       input.checked = true;
-
+*/
       var stringReflection = ".reflection";
       var itemNameReflection = title + stringReflection;
       document.getElementById("reflectionArea").value = localStorage.getItem(itemNameReflection);
