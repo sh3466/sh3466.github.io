@@ -1,35 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>chiaroscuro</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="main.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="script_array.js"></script>
 	<script src="script_pageGenerator.js"></script>
 	<script src="script_userInteractions.js"></script>
 </head>
+
 <body>
 
 	<!--- bootstrap container --->
 	<div id="all" class="container">
 
-		<!--- SITE HEADER --->
+		<!--- site header --->
 		<div id="logInSyllabus">
-			<!--- login and syllabus links from script_pageHeader.js --->
+			<!--- login and syllabus links from script_header.js --->
 		</div>
 		<div id="siteTitle">
-			<!--- siteTitle from script_pageHeader.js --->
+			<!--- siteTitle from script_header.js --->
 		</div>
 		<div id="nav">
 			<ul id="mainNavUl" class="nav nav-pills">
-				<!--- nav from script_nav.js --->
+				<!--- nav from script_header.js --->
 			</ul>
 		</div>
 
-		<!--- DEFINITION --->
+		<!--- definition --->
 		<div class="jumbotron">
 			<h1 id="defTitle" class="h1jumbotron">
 				<!--- definition() in script_pageGenerator.js --->
@@ -42,7 +45,7 @@
 			</p>
 		</div>
 
-		<!--- SUB NAVIGATION --->
+		<!--- sub navigation --->
 		<div id="lessonNav">
 			<div id="lessonNavButtons" class="btn-group" role="group">
 				<button id="introButton" type="button" class="btn btn-default" onclick="showIntro()">
@@ -60,7 +63,7 @@
 			</div>
 		</div>
 
-		<!--- INTRODUCTION --->
+		<!--- introduction --->
 		<div id="introContent">
 			<h1 id="introTitle">
 				<!--- introductionTitle() in script_pageGenerator.js --->
@@ -82,7 +85,7 @@
 			</div>
 		</div>
 
-		<!--- LECTURE --->
+		<!--- lecture --->
 		<div id="lectureContent">
 			<h1 id="lectureTitle" class="text-capitalize">
 				<!--- lectureTitle() in script_pageGenerator.js --->
@@ -116,7 +119,7 @@
 			</div>
 		</div>
 
-		<!--- STUDIO --->
+		<!--- studio --->
 		<div id="studioContent">
 			<h1 id="studioTitle" class="text-capitalize">
 				<!--- studioTitle() in script_pageGenerator.js --->
@@ -140,7 +143,9 @@
 						</h1>
 						<div id="uploadSketch" class="form-group">
 							<label for="inputFile">
-								<strong>1. Upload your sketch here.</strong>
+								<strong>
+									1. Upload your sketch here.
+								</strong>
 							</label>
 							<button class="btn btn-link btn-sm" onclick="uploadInfo()">
 								<span class="glyphicon glyphicon-info-sign"></span>
@@ -188,7 +193,7 @@
 			</div>
 		</div>
 
-		<!--- CRITIQUE --->
+		<!--- critique --->
 		<div id="critiqueContent">
 			<h1 id="critiqueTitle" class="text-capitalize">
 				<!--- critiqueTitle() in script_pageGenerator.js --->
@@ -211,7 +216,9 @@
 							Assignment
 						</h1>
 						<p>
-							<strong>1. Select 2 example pieces to critique.</strong>
+							<strong>
+								1. Select 2 example pieces to critique.
+							</strong>
 						</p>
 						<div id="critiqueInputs" class="row">
 							<div id="critique1" class="col-xs-6">
@@ -265,8 +272,7 @@
 			</div>
 		</div>
 
-	</div>
-	<!--- end #container --->
+	</div> <!--- end container --->
 
 </body>
 

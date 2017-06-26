@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Profile Page</title>
@@ -8,9 +9,8 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="script_userInteractions.js"></script>
-	<script src="script_profilePage.js"></script>
 </head>
+
 <body>
 
 	<!--- bootstrap container --->
@@ -18,17 +18,20 @@
 
 		<!--- site header --->
 		<div id="logInSyllabus">
-			<!--- login and syllabus links from script_pageHeader.js --->
+			<!--- login and syllabus links from script_header.js --->
 		</div>
 		<div id="siteTitle">
-			<!--- siteTitle from script_pageHeader.js --->
+			<!--- siteTitle from script_header.js --->
 		</div>
 
 		<!--- content --->
 		<div id="profilePageContent">
 			<div class="row">
 
-				<div id="profile" class="col-sm-3">
+				<!--- sidebar --->
+				<div id="profileSideBar" class="col-sm-3">
+
+					<!--- profile --->
 					<div class="well">
 						<div id="profilePicDiv">
 							<img id="profilePicImg" src="http://images.metmuseum.org/CRDImages/ph/mobile-large/DP148347.jpg" class="img-responsive" />
@@ -37,31 +40,37 @@
 							<h4>Jane Doe</h4>
 						</div>
 						<div id="portfolioCount">
-							<p id="showPieces" >
+							<p id="showPieces">
 								<!--- setPortfolioCount from script_profilePage.js --->
-							</span>
+							</p>
 						</div>
 					</div>
 
+					<!--- collection panel --->
 					<div id="collectionPanel" class="panel-group">
-				    <div class="panel panel-default">
-
-				      <div class="panel-heading">
-				        <h4 class="panel-title">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
 				          <a data-toggle="collapse" href="#collection">Collection</a>
 				        </h4>
-				      </div>
-				      <div id="collection" class="panel-collapse collapse">
-				        <div class="panel-body">
-									<p id="manageTitle" >MANAGE YOUR COLLECTION</p>
+							</div>
+							<div id="collection" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p id="manageTitle">
+										MANAGE YOUR COLLECTION
+									</p>
 									<p><strong>
 										Select pieces to include.
 									</strong></p>
 									<ul id="collectionList" class="list-unstyled">
 										<!--- collectionList from script_profilePage.js --->
 									</ul>
-									<button id="selectAllButton" onclick="selectAll()">Select All</button>
-									<button id="deselectAllButton" onclick="deselectAll()">Deselect All</button>
+									<button id="selectAllButton" onclick="selectAll()">
+										Select All
+									</button>
+									<button id="deselectAllButton" onclick="deselectAll()">
+										Deselect All
+									</button>
 									<p id="addNewPiece"><strong>
 										Add a new piece.
 									</strong></p>
@@ -74,23 +83,29 @@
 									<div class="form-group">
 										<input id="newItemURL" type="url" class="form-control" placeholder="url" />
 									</div>
-									<button type="button" onclick="addCollectionItem()">enter</button>
+									<button type="button" onclick="addCollectionItem()">
+										enter
+									</button>
 								</div>
-				      </div>
+							</div>
+						</div>
+					</div>
 
-				    </div>
-				  </div>
-
+					<!--- theme dropdown --->
 					<div class="form-group">
-						<select  id="sort" onchange="sort()">
-							<option value="theme">Theme</option>
+						<select id="theme" onchange="theme()">
+							<option value="none">Theme</option>
 							<option value="light">light</option>
 							<option value="dark">dark</option>
 						</select>
 					</div>
-			</div>
 
+				</div> <!--- end profileSideBar --->
+
+				<!--- portfolio --->
 				<div id="portfolio" class="col-sm-9">
+
+					<!--- portfolio title and buttons --->
 					<div class="row">
 						<div class="col-xs-9">
 							<h1 id="portfolioTitle">portfolio</h1>
@@ -106,6 +121,8 @@
 							</div>
 						</div>
 					</div>
+
+					<!--- portfolio display --->
 					<div id="galleryContent">
 						<ul id="galleryUL" class="list-unstyled">
 							<!--- portfolioGallery from script_profilePage.js --->
@@ -116,23 +133,17 @@
 							<!--- portfolioList from script_profilePage.js --->
 						</ul>
 					</div>
-				</div>
 
-				</div>
+				</div> <!--- end portfolio --->
 
-			</div>
-			<!--- end .row --->
-		</div>
-		<!--- end #content --->
+			</div> <!--- end .row --->
+		</div> <!--- end content --->
+	</div> <!--- end container --->
 
-	</div>
-	<!--- end .container --->
 </body>
-<script src="script_userInteractions.js"></script>
-<script src="script_pageGenerator.js"></script>
+
 <script src="script_header.js"></script>
 <script src="script_profilePage.js"></script>
-
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>

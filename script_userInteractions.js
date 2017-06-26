@@ -1,3 +1,4 @@
+// for testing
 // localStorage.clear()
 
 // USER INTERACTIONS
@@ -52,9 +53,9 @@ function resetStudio(event) {
   document.getElementById('sketchImg').src = "https://placehold.it/500x500/dddddd/dddddd";
   localStorage.removeItem(document.title + ".rating");
   var radios = document.querySelectorAll('#rating input[type="radio"]:checked');
-    for (var option of radios) {
-      option.checked = false;
-    }
+  for (var option of radios) {
+    option.checked = false;
+  }
   localStorage.removeItem(document.title + ".reflection");
   document.getElementById('reflectionArea').value = "";
 }
@@ -97,25 +98,4 @@ function displayImgC2(event) {
   var imgEl = document.getElementById('selection2img');
   var imgSrc = document.getElementById('selection2URL').value;
   imgEl.src = imgSrc;
-}
-
-// LOGIN PAGE
-
-function welcomeMessage(event) {
-  alert("The email you've entered isn't in our system. Please use the \"Sign up\" form to register.");
-  document.getElementById("username").value = "";
-  document.getElementById("password").value = "";
-}
-
-function makeUserName() {
-  var firstName = document.getElementById("firstName").value;
-  var lastName = document.getElementById("lastName").value;
-  var userName = firstName + " " + lastName;
-  return userName;
-}
-
-function registrationMessage(event) {
-  var fullName = makeUserName();
-  var email = document.getElementById("email").value;
-  alert("Welcome, " + fullName + "! We've sent your password to " + email + ".");
 }

@@ -142,7 +142,7 @@ label {
   padding-bottom:10px;
 }
 
-/* content - teacher page */
+/* syllabus */
 
 #courseDescription li {
   padding-bottom: 15px;
@@ -160,43 +160,63 @@ label {
   padding-bottom: 10px;
 }
 
-/* login page */
-#logIn {
-	margin-top:50px;
-}
+/* profile page */
 
-/* portfolio page*/
-
-#profile {
+#profileSideBar {
   margin-top:25px;
-}
-
-#collectionPanel {
-  padding-top:25px;
 }
 
 #profilePicDiv {
   padding-bottom:10px;
 }
 
-#portfolioTitle {
-  margin-left:20px;
-  margin-bottom:10px;
-  letter-spacing: 2px;
+#userName  {
   color: #ED6237;
 }
 
-.lightSort {
+#collectionPanel {
+  padding-top:25px;
+}
+
+.selected {
+  color: gray;
+}
+
+#manageTitle {
+  padding-bottom:10px;
+  font-weight: bold;
+}
+
+#addNewPiece {
+  padding-top: 25px;
+}
+
+#theme {
+    background-color: #f5f5f5;
+    border:1px solid #ccc;
+    border-radius:4px
+    border-image: initial;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    line-height:40px;
+    font-weight:500;
+}
+
+.lightTheme {
   background-color: white;
 }
 
-.darkSort {
+.darkTheme {
   background-color: #a6a6a6;
   color: white !important;
   border-radius: 5px;
 }
 
-#userName  {
+#portfolioTitle {
+  margin-left:20px;
+  margin-bottom:10px;
+  letter-spacing: 2px;
   color: #ED6237;
 }
 
@@ -209,16 +229,8 @@ label {
   padding-right:5px;
 }
 
-#sort {
-    background-color: #f5f5f5;
-    border:1px solid #ccc;
-    border-radius:4px
-    border-image: initial;
-    outline: none;
-    width: 100%;
-    font-size: 16px;
-    line-height:40px;
-    font-weight:500;
+#listContent {
+  display: none;
 }
 
 img.galleryImg {
@@ -238,10 +250,6 @@ img.listImg {
   border-radius: 5px;
 }
 
-#listContent {
-  display: none;
-}
-
 .imgTitle {
   font-weight: bold;
   letter-spacing: 1px;
@@ -253,23 +261,4 @@ img.listImg {
   margin-left: 23px;
   margin-bottom:40px;
   letter-spacing: 1px;
-}
-
-
-
-.selected {
-  color: gray;
-}
-
-#space {
-  padding-right:10px;
-}
-
-#manageTitle {
-  padding-bottom:10px;
-  font-weight: bold;
-}
-
-#addNewPiece {
-  padding-top: 25px;
 }
