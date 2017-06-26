@@ -179,11 +179,21 @@ label {
   padding-bottom:10px;
 }
 
-.portfolioTitle {
+#portfolioTitle {
   margin-left:20px;
   margin-bottom:10px;
   letter-spacing: 2px;
   color: #ED6237;
+}
+
+.lightSort {
+  background-color: white;
+}
+
+.darkSort {
+  background-color: #a6a6a6;
+  color: white !important;
+  border-radius: 5px;
 }
 
 #userName  {
@@ -245,15 +255,7 @@ img.listImg {
   letter-spacing: 1px;
 }
 
-.lightSort {
-  background-color: white;
-}
 
-.darkSort {
-  background-color: #a6a6a6;
-  color:white;
-  border-radius: 5px;
-}
 
 .selected {
   color: gray;

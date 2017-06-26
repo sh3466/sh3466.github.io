@@ -116,20 +116,20 @@ function sort(event) {
 	var sortSel = document.getElementById('sort');
 	if (sortSel.value === "light"){
     document.getElementById('portfolio').classList.add('lightSort');
-		document.getElementById('portfolioT').classList.add('lightSort');
+		document.getElementById('portfolioTitle').classList.add('lightSort');
 		document.getElementById('galleryButton').classList.add('lightSort');
 		document.getElementById('listButton').classList.add('lightSort');
     document.getElementById('portfolio').classList.remove('darkSort');
-		document.getElementById('portfolioT').classList.remove('darkSort');
+		document.getElementById('portfolioTitle').classList.remove('darkSort');
 		document.getElementById('galleryButton').classList.remove('darkSort');
 		document.getElementById('listButton').classList.remove('darkSort');
 	} else if (sortSel.value === "dark") {
     document.getElementById('portfolio').classList.add('darkSort');
-		document.getElementById('portfolioT').classList.add('darkSort');
+		document.getElementById('portfolioTitle').classList.add('darkSort');
 		document.getElementById('galleryButton').classList.add('darkSort');
 		document.getElementById('listButton').classList.add('darkSort');
     document.getElementById('portfolio').classList.remove('lightSort');
-		document.getElementById('portfolioT').classList.remove('lightSort');
+		document.getElementById('portfolioTitle').classList.remove('lightSort');
 		document.getElementById('galleryButton').classList.remove('lightSort');
 		document.getElementById('listButton').classList.remove('lightSort');
   } else {}
@@ -225,3 +225,14 @@ function deselectAll(event) {
 	portfolioList();
 	setPortfolioCount();
 }
+
+function courseworkList() {
+	var coursework = "";
+	for (assignment of Storage) {
+		if (assignment.key) {
+			coursework = localStorage.setItem(assignment.key);
+			document.getElementById('courseworkList').innerHTML = localStorage.getItem(coursework);
+		}
+	}
+}
+courseworkList();
