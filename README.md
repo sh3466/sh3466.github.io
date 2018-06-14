@@ -202,10 +202,6 @@ function portfolioList() {
 portfolioList();
 ```  
 
-## Reflection  
-
-reflection video: [Reflection video](https://youtu.be/OLaLuE6KIzk)  
-
 ## Author  
 
 [@heinitz](https://twitter.com/heinitz)
