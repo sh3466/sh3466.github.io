@@ -2,8 +2,6 @@
 
 **TABLE OF CONTENTS**  
 
-testing
-
 [project description](#project-description)  
 [motivation](#motivation)  
 [code features](#code-features)  
